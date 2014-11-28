@@ -3,7 +3,7 @@ require 'fileutils'
 require 'pathname'
 require 'yaml'
   
-class FSCache
+class FsCache
   VERSION = "0.9.0"
   
   def initialize(path = nil, expire = 7, debug = false)
