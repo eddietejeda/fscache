@@ -1,5 +1,5 @@
 #encoding: utf-8
-require File.expand_path('../lib/fscache/fscache', __FILE__)
+require File.expand_path('../lib/fscache.rb', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name        = 'fscache'
@@ -12,12 +12,14 @@ Gem::Specification.new do |gem|
   gem.executables = `git ls-files -- bin/*`.split("\n").map{|f| File.basename(f)}
   gem.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
 
+  gem.homepage    = "https://github.com/eddietejeda/fscache"
 
+  gem.license     = 'BSD-3-Clause'
   gem.authors     = ['Eddie A Tejeda']
   gem.email       = ['eddie@codeforamerica.org']
 
-  gem.add_development_dependency 'rake'
-  gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'rake','~> 10.x'
+  gem.add_development_dependency 'rspec','~> 3.x'
 
 end
 

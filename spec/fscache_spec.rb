@@ -1,5 +1,5 @@
 # require 'spec_helper'
-require_relative '../lib/fscache/fscache'
+require_relative '../lib/fscache'
 
 describe FsCache do
 

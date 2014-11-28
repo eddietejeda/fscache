@@ -26,5 +26,5 @@ PLATFORMS
 
 DEPENDENCIES
   fscache!
-  rake
-  rspec
+  rake (~> 10.x)
+  rspec (~> 3.x)

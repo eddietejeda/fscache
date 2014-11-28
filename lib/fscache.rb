@@ -4,8 +4,9 @@ require 'pathname'
 require 'yaml'
   
 class FsCache
+
   VERSION = "0.9.0"
-  
+
   def initialize(path = nil, expire = 7, debug = false)
     @file_cache_expire = expire
     @debug = debug
