@@ -4,7 +4,7 @@ require File.expand_path('../lib/fscache.rb', __FILE__)
 Gem::Specification.new do |gem|
   gem.name        = 'fscache'
   gem.version     = FsCache::VERSION
-  gem.description = %q(A simple file cache library that serializes objects into temporary directory)
+  gem.description = %q(A simple caching library that serializes objects to the filesystem and is compatible with the Rails.cache API)
   gem.summary     = gem.description
   
   gem.files       = `git ls-files`.split("\n")

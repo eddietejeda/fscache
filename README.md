@@ -1,5 +1,5 @@
 #FsCache
-Simple FileCache with that uses similar API to Rails.cache
+A simple caching library that serializes objects to the filesystem and is compatible with the Rails.cache API
 
 #Installation
     gem install fscache
