@@ -10,10 +10,12 @@ Or add the following to your Gemfile (do this for now):
 
 # Usage examples
 
-    require 'fscache'
-    filecache = FsCache.new
-    filecache.write("cache_name", "cache_contents")
-    contents = filecache.read("cache_name")
-    filecache.fetch("cache_name") do
-        "cache_contents"
-    end
+```ruby
+require 'fscache'
+filecache = FsCache.new
+filecache.write("cache_name", "cache_contents")
+contents = filecache.read("cache_name")
+filecache.fetch("cache_name") do
+    "cache_contents"
+end
+```
