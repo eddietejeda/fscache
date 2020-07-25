@@ -1,14 +1,14 @@
-#FsCache
+# FsCache
 A simple caching library that serializes objects to the filesystem and is compatible with the Rails.cache API
 
-#Installation
+# Installation
     gem install fscache
 
 Or add the following to your Gemfile (do this for now):
     
     gem 'fscache', :git => 'git://github.com/eddietejeda/fscache.git'
 
-#Usage examples
+# Usage examples
 
     require 'fscache'
     filecache = FsCache.new
